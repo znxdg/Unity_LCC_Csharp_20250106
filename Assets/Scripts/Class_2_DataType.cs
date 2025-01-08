@@ -24,4 +24,13 @@ public class Class_2_DataType : MonoBehaviour
 
     public bool isDead = false;
     public bool gameOver = true;
+
+    public byte lv = 16;
+    public uint coin = 9999;
+    public long items = 3000;
+
+    public string playerName = "小游";
+    public char a = 'a';
+
+    //public sbyte number = 128; //溢位
 }
