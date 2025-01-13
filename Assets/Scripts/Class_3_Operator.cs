@@ -36,7 +36,7 @@ public class Class_3_Operator : MonoBehaviour
     [SerializeField]
     private float mp = 500;
     #endregion
-
+    //快捷鍵：快速搬移程式(Alt + 上下箭頭)
     /* 使用 Unity 事件
      * 1. 必須在腳本後面添加：MonoBehaviour (繼承)
      * 2. 使用關鍵字快速完成，例如：輸入 Awake 挑選要使用的事件按 Enter
@@ -45,6 +45,7 @@ public class Class_3_Operator : MonoBehaviour
      */
     private void Awake()
     {
+        #region =輸出訊息=
         // 將小括號內的訊息輸出到 Unity 的 Console 控制台面板
         // Shift + Ctrl + C 開啟控制台面板
         Debug.Log("Hello World！");                      // 輸出文字
@@ -57,6 +58,43 @@ public class Class_3_Operator : MonoBehaviour
         // 色碼：#紅紅綠綠藍藍，數值：0 ~ 9，a ~ f，越右邊顏色越亮 #000 黑 #fff 白
         Debug.Log("<color=#ff00ff>紫色</color>");
         Debug.Log("<color=#f0f>紫色</color>");
+        #endregion
 
+        #region =算數運算子=
+        /* 運算子：
+         * 1. 算術運算子
+         * >> 加、減、乘、除、餘
+         * >> + 、 - 、 * 、 / 、 %
+         */
+        Debug.Log("<color=#f93>--- 算數運算子 ---</color>");
+        Debug.Log(10 + 3);  // 13
+        Debug.Log(10 - 3);  // 7
+        Debug.Log(10 * 3);  // 30
+        Debug.Log(10 / 3);  // 3 非宣告float，則不會有小數點
+        Debug.Log(10 % 3);  // 10/3 = 3 餘 1，輸出為 1
+
+        Debug.Log("<color=#f93>--- 算數運算子:區域變數 ---</color>");
+        float numberA = 10;
+        float numberB = 3;
+
+        Debug.Log(numberA + numberB);
+        Debug.Log(numberA - numberB);
+        Debug.Log(numberA * numberB);
+        Debug.Log(numberA / numberB); // 3.333
+        Debug.Log(numberA % numberB);
+        #endregion
+
+        #region =邏輯運算子=
+        Debug.Log("<color=#f93>--- 算數運算子:區域變數 ---</color>");
+        // 比較運算子，使用後會得到布林值
+        int numberC = 30, numberD = 79;
+
+        Debug.Log(numberC > numberD);       // C 大於 D,     False
+        Debug.Log(numberC < numberD);       // C 小於 D,     True
+        Debug.Log(numberC >= numberD);      // C 大於等於 D,  False
+        Debug.Log(numberC <= numberD);      // C 小於等於 D,  True
+        Debug.Log(numberC == numberD);      // C 等於 D,      False
+        Debug.Log(numberC != numberD);      // C 不等於 D,    True
+        #endregion
     }
 }
