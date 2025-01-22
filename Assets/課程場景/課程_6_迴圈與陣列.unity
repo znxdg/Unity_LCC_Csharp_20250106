@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659779037}
   - component: {fileID: 1659779038}
+  - component: {fileID: 1659779039}
   m_Layer: 0
   m_Name: "\u8AB2\u7A0B_6_\u8FF4\u5708\u8207\u9663\u5217"
   m_TagString: Untagged
@@ -163,6 +164,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3641877f76f3e4692db22d1e899e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1659779039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659779036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a81006473160047be3e7c6b55710d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - "\u706B\u7130\u9CE5"
+  - "\u96F7\u516C"
+  - "\u96F7\u4E18"
+  - "\u62C9\u8482\u4E9E\u65AF"
+  - "\u5361\u6BD4\u7378"
+  deck1:
+  - 
+  - 
+  - 
+  - 
+  - 
+  deck2:
+  - "\u6025\u51CD\u9CE5"
+  - "\u8CED\u971E"
+  - "\u5BF6\u77F3\u6D77\u661F"
 --- !u!1 &1934332410
 GameObject:
   m_ObjectHideFlags: 0
