@@ -23,7 +23,7 @@ namespace YuCheng
                 case >= 10:
                     Debug.Log("<color=#f3f>快死掉了</color>");
                     break;
-                case 0:
+                case <= 0:
                     Debug.Log("<color=#f3f>你已經死了</color>");
                     break;
             }
