@@ -11,11 +11,13 @@ namespace YuCheng
         private void Awake()
         {
             // 實力化 NPC 並儲存在npcJack 變數內
-            Class_8_1_NPC npcJack = new Class_8_1_NPC(); 
-            Class_8_1_NPC npcYuCheng = new Class_8_1_NPC("YuCheng");
+            Class_8_1_NPC npcJack = new Class_8_1_NPC("捷克"); 
+            Class_8_1_NPC npcYuCheng = new Class_8_1_NPC("YuCheng", "哈囉阿~~");
 
             npcJack.LogName();
             npcYuCheng.LogName();
+            npcJack.Talk();
+            npcYuCheng.Talk();
         }
     }
 
