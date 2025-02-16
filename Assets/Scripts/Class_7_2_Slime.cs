@@ -7,7 +7,7 @@ namespace YuCheng
     /// </summary>
     public class Class_7_2_Slime : MonoBehaviour
     {
-        // 非靜態成員是每個物件各別擁有
+        // 非靜態成員是每個物件各別擁有 (不共享)
         public float hp = 100;
 
         // 靜態成員是該類別共同擁有
